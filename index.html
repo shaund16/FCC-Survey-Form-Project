@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Survey Form</title>
+</head>
+         <body>
+     <div class="container">
+       <header class="header">
+         <h1 id="title" class="text-center">Success Talk Survey Form</h1>
+         <p id="description" class="description text-center">
+           Thank you for taking the time to provide us feedback for improvement</p>
+       </header>
+       <!-- Name -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <br>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <!-- Email --> 
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <br>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <!-- Age -->
+        <div class="form-group">
+          <label id="number-label" for="number">
+            Age <span class="clue">(optional)</span>
+          </label>
+          <br>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        
+        <!-- Selections -->
+      <div class="form-group">
+        <p> Which option best descibes your current role</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full-Job</option>
+          <option value="learner">Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        </div>
+        
+        <!-- Recommendation -->
+        <div class="form-group">
+          <p> Would you recommend this Seminar to a friend?</p>
+           <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked> Definitely</label>
+          <br>
+           <label>
+             <input name="user-recommend" value="Maybe" type="radio" class="input-radio"> Maybe</label> 
+          <br> 
+           <label>
+             <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not Sure</label>
+        </div>
+        
+        <!-- Favorite --> 
+        
+       <div class="form-group">
+         <p> What is your favorite part of the Success Talk?</p>
+         <select id="most-like" name="mostlike" class="form-control" required>
+           <option disabled selected value> Select an option</option>
+           <option value="concepts">Concepts</option>
+           <option value="application-steps">Application Steps</option>
+           <option value="community">Community</option>
+           <option value="speakers-delivery">Speakers Delivery</option>
+           <option value="Humour">Humour</option>
+           <option value="positivity">Positivity</option>
+         </select>
+        </div>
+        
+        <!-- List of Improvements --> 
+        <div class="form-group">
+          <p> What did you learn? <span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer" value="time-management" type="checkbox" class="input-checkbox">Time Management</label>
+          <br>
+          <label>
+            <input name="prefer" value="success-princples" type="checkbox"  class="input-checkbox">Success Principles</label>
+          <br>
+           <label>
+            <input name="prefer" value="networking" type="checkbox" class="input-checkbox">Networking</label>
+          <br>
+           <label>
+             <input name="prefer" value="attitude" type="checkbox" class="input-checkbox">Attitude</label>
+          <br>
+           <label>
+             <input name="prefer" value="communication" type="checkbox" class="input-checkbox">Communication</label>
+          <br>
+           <label>
+             <input name="prefer" value="leadership" type="checkbox" class="input-checkbox">Leadership</label>
+          <br>
+           <label>
+             <input name"prefer" value="other" type="checkbox" class="input-checkbox">Other</labels>
+        </div>
+        <!-- Suggestions -->
+        <div class="form-group">
+          <p> Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+       
+       
+       </form>
+       </body>
+
+       </html>
